@@ -20,7 +20,12 @@ This is the code repository for our [paper](#cite) titled "[Active deep learning
 ![](images/Fig.png)
 
 ## Brief Description of the Method
-
+We design the working pipeline of the proposed method using the following steps: 
+1. Initially, we generate voxel-level annotations (pseudo annotation) using supervised deep models (step 1 in figure above) while considering the fact that these machine-generated annotations are less reliable (noisy teacher) than human expert annotations (step 2 in figure above). 
+2. Then we generate a relative weight based on gradients per sample based on its "trustworthiness" during training. A sample weight is estimated from the similarity of the gradient directions between the annotation-free sample data and the expert-annotated validation data (step 3 in figure above).
+3. As the primary aim of an active learning algorithm is to identify and label only maximally-informative samples, gradient similarity-based sample weighting may lead to underestimation of a more diversely informative data sample. On the other hand, gradient magnitude with respect to parameters in the final CNN layer can be used as a measure of a model’s uncertainty. The higher magnitude of the gradient of the last layer, resulting from a higher loss of training, implies that the interrogated training sample contains newer information that the model has not yet seen. In our proposed approach, we adopt this gradient magnitude-based strategy and generate another set of sample weights based on their "informativeness" during training (step 3 in figure above).
+4. Afterwards, we generate an overall sample weight by combining the "trustworthiness" and "informativeness" sample weights. 
+5. Finally, we use a query mechanism to choose more informative and trustworthy samples in a batch of annotation-free data by rectification (i.e., choosing more useful data in a batch) of the combined sample weight, and subsequently use these combined sample weights in the batch during the model optimization.
 
 ## Table of contents
 1. [Installation](#installation)
