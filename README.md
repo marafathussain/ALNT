@@ -19,6 +19,9 @@ This is the code repository for our [paper](#cite) titled "[Active deep learning
 
 ![](images/Fig.png)
 
+## Brief Description of the Method
+
+
 ## Table of contents
 1. [Installation](#installation)
 2. [Usage](#usage)
