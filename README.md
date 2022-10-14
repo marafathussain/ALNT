@@ -55,6 +55,7 @@ We also shared the code for the key algorithm (that runs inside the training loo
   title={Active deep learning from a noisy teacher for semi-supervised 3D image segmentation: Application to COVID-19 pneumonia infection in CT},
   author={Hussain, Mohammad Arafat and Mirikharaji, Zahra and Momeny, Mohammad and Marhamati, Mahmoud and Neshat, Ali Asghar and Garbi, Rafeef and Hamarneh, Ghassan},
   journal={Computerized Medical Imaging and Graphics},
+  doi = {10.1016/j.compmedimag.2022.102127},
   pages={102127},
   year={2022},
   publisher={Elsevier}
