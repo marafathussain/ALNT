@@ -2,8 +2,7 @@
 
 This is the code repository for our [paper](#cite) titled "[Active deep learning from a noisy teacher for semi-supervised 3D image segmentation: Application to COVID-19 pneumonia infection in CT](https://www.sciencedirect.com/science/article/pii/S0895611122000970)" that solves the problem of learning from big data without expert annotation by leveraging very small data with expert-annotation.  
 
-[PDF Link](https://www.cs.sfu.ca/~hamarneh/ecopy/cmig2022.pdf)
-[DOI](https://doi.org/10.1016/j.compmedimag.2022.102127)
+[PDF Link](https://www.cs.sfu.ca/~hamarneh/ecopy/cmig2022.pdf) | [DOI](https://doi.org/10.1016/j.compmedimag.2022.102127)
 
 ## Repository layout
 ```
